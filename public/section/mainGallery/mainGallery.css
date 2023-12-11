@@ -1,0 +1,15 @@
+.gallery_div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 170px));
+  grid-template-rows: repeat(auto-fill, minmax(170px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.one_photo {
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,21 @@
+.input {
+  margin: 10px;
+}
+
+.input::placeholder {
+  font-size: 11px;
+}
+
+@media screen and (min-width: 1190px) and (max-width: 2000px) {
+  .input {
+    width: 300px;
+    margin: 0 30vw 0 0;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1189px) {
+  .input {
+    width: 300px;
+    margin: 5vw;
+  }
+}
