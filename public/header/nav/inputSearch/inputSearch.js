@@ -1,4 +1,5 @@
 import './inputSearch.css';
+import { apiCall } from '../../../../functions/apiCall';
 
 const inputSearch = () => {
   const input = document.createElement('input');
@@ -7,7 +8,8 @@ const inputSearch = () => {
   input.placeholder = 'Empieza a dejar volar tu imaginación...';
 
   function searchImage(ev) {
-    console.log(ev.target.value);
+    const words = ev.target.value;
+    apiCall(words);
   }
 
   input.addEventListener('input', searchImage);

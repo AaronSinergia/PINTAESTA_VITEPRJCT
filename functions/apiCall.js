@@ -1,11 +1,13 @@
 import mainGallery from '../public/section/mainGallery/mainGallery';
 
-export const apiCall = () => {
-  const unsplash = 'https://api.unsplash.com/photos/?client_id=';
+export const apiCall = (word) => {
+  const unsplash = 'https://api.unsplash.com/search/photos/?client_id=';
   const unsplashKey = '9xmBSdeEH9FRrkNcH13neTnaxKsaPGhfPwEyR32jTLE';
-  const URL = unsplash + unsplashKey;
+  const valorSearched = '&query=';
 
-  fetch(URL)
+  const searchUrl = unsplash + unsplashKey + valorSearched + word;
+
+  fetch(searchUrl)
     .then((response) => {
       if (!response.ok) {
         throw new Error('La consulta no es válida');

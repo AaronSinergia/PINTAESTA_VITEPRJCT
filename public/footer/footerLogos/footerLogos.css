@@ -183,15 +183,15 @@ img {
 
 @media screen and (min-width: 600px) and (max-width: 1189px) {
   .github_logo {
-    width: 150px;
+    width: 120px;
   }
 
   .netlify_logo {
-    width: 130px;
+    width: 100px;
   }
 
   .linkedin_logo {
-    width: 40px;
+    width: 30px;
     margin: 0 20px 0 10px;
   }
 }

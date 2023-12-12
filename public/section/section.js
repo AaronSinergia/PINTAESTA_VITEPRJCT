@@ -1,12 +1,10 @@
-import mainGallery from './mainGallery/mainGallery';
+import { apiCall } from '../../functions/apiCall';
 
 const section = () => {
   const section = document.createElement('section');
   section.className = 'section';
 
-  const gallery = mainGallery();
-
-  section.appendChild(gallery);
+  apiCall();
 
   return section;
 };
