@@ -17,9 +17,9 @@ const footerLogos = () => {
   linkedinLogo.alt = 'linkedin';
   netlifyLogo.alt = 'netlify';
 
-  githubLogo.src = './assets/GitHubLogo.png';
-  linkedinLogo.src = './assets/1384014.png';
-  netlifyLogo.src = './assets/netlify_logo_icon_169924.png';
+  githubLogo.src = '../assets/GitHubLogo.png';
+  linkedinLogo.src = '../assets/1384014.png';
+  netlifyLogo.src = '../assets/netlify_logo_icon_169924.png';
 
   githubLogo.className = 'github_logo';
   linkedinLogo.className = 'linkedin_logo';
